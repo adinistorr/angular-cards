@@ -12,22 +12,22 @@ export class DoctorsService {
   getDoctors() {
     let newDoctors = [
       {
-        fName: "Stela",
-        lName: "Popescu",
+        fName: "Samantha",
+        lName: "Brahms",
         position: "Generalist",
         img: "../../assets/imgs/medic-1.jpg",
         stars: 3,
       },
       {
-        fName: "Micul",
-        lName: "Geniu",
+        fName: "Steve",
+        lName: "Parker",
         position: "Pediatru",
         img: "../../assets/imgs/medic-2.jpg",
         stars: 5,
       },
       {
-        fName: "Mircea",
-        lName: "Coltescu",
+        fName: "Abdul",
+        lName: "Muhamad",
         position: "Cardiolog",
         img: "../../assets/imgs/medic-3.png",
         stars: 2,
@@ -41,7 +41,7 @@ export class DoctorsService {
       },
       {
         fName: "Matei",
-        lName: "Bals",
+        lName: "Serban",
         position: "Oncolog",
         img: "../../assets/imgs/medic-5.jpg",
         stars: 1,
@@ -57,13 +57,11 @@ export class DoctorsService {
     this.apiDoctors.push(...newDoctors);
 
     setTimeout(() => {
-      this.apiDoctors[0].fName = "Maricica";
-
       this.apiDoctors.push({
         fName: "Dumbraviceanu",
-        lName: "Corin",
+        lName: "Corina",
         position: "Chirurg",
-        img: "../../assets/imgs/medic-2.jpg",
+        img: "../../assets/imgs/medic-7.jpeg",
         stars: 1,
       });
     }, 5000);
