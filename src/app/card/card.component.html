@@ -1,0 +1,11 @@
+<div class="card">
+    <img class="card-img-top" src={{info.img}} alt="Card image cap">
+    <div class="card-body">
+        <h5 class="card-title">Dr. {{info.fName + " " + info.lName}}</h5>
+        <p class="card-text">Medic: {{info.position}}</p>
+        <a href="#" class="btn btn-primary">Detalii</a>
+        <div class="text-right">
+            <app-rating (ratingClickedEmit)="updateStars($event)" [stars]="info.stars"></app-rating>
+        </div>
+    </div>
+</div>
